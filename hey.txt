@@ -1,1 +1,37 @@
 hey ok omg
+
+Based on the image provided, here are the Git commands to answer each question:
+
+1b: Create a lightweight tag
+
+Command: git tag v1.0 <commit_id>
+
+Note: If you want to tag the current commit (HEAD) you are currently on, you can simply run git tag v1.0.
+
+2b: Display the last five commits
+
+Command: git log -n 5
+
+Note: A shorter version, git log -5, also works.
+
+3b: Cherry-pick a range of commits
+
+Command: git cherry-pick <start_commit_id>..<end_commit_id>
+
+Note: In Git, a standard range A..B includes commit B but excludes commit A. If you want to include the starting commit in the cherry-pick, you should use git cherry-pick <start_commit_id>^..<end_commit_id>.
+
+4b: View details of a specific commit
+
+Command: git show <commit_id>
+
+Note: This command displays the log message, author, date, and the diff (changes) of that specific commit.
+
+5b: List commits by a specific author within a date range
+
+Command: git log --author="John" --after="2024-01-01" --before="2024-12-31"
+
+Note: You can also use --since and --until as synonyms for --after and --before.
+
+6b: Undo changes from a specific commit
+
+Command: git revert <commit_id>
