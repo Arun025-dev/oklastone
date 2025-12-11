@@ -35,3 +35,50 @@ Note: You can also use --since and --until as synonyms for --after and --before.
 6b: Undo changes from a specific commit
 
 Command: git revert <commit_id>
+
+
+
+# 1. Link your local folder to the GitHub URL
+git remote add origin <paste_your_github_url_here>
+
+# 2. Rename your branch to 'main' (standard practice)
+git branch -M main
+
+# 3. Push your commits to GitHub
+git push -u origin main
+
+
+
+git pull origin main
+
+
+
+# 1. Clone (Download) the repository
+git clone <url_of_repo>
+
+# 2. Go INTO the new folder (Crucial Step!)
+cd <repo_name>
+
+# 3. Verify the setup (Check connection)
+git remote -v
+# (Output should show the fetch/push URLs)
+
+# 4. Make a change (Edit a file manually or use echo)
+echo "New line of code" >> newfile.txt
+
+# 5. Commit the change
+git add .
+git commit -m "Made a small change"
+
+# 6. Pull latest updates (as requested)
+git pull origin main
+
+
+
+
+git push origin v1.0 for tag
+
+
+
+
+
